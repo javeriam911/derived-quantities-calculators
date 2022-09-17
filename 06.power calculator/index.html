@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .three {
+     background-color: rgb(0, 255, 0)
+         
+         }
+         .two{
+     
+         background-color: aqua;
+         }
+         .one{
+             text-align: center;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:30px;
+         }
+     </style>
+</head>
+
+<body class="two">
+    <span class="one">
+        <div>
+            <h1>power calculator :</h1>
+        </div>
+        <div>
+            <form onsubmit="calculate();return false;">
+                <label for="workDone">Work done :</label>
+                <input type="number" id="workDone"><br>
+                <label for="elapsed time"> Elapsed time :</label>
+                <input type="number" id=" time"><br>
+
+            </form>
+        </div>
+        <div><button class="three"  onclick="calculate()">
+                submit
+            </button></div>
+    </span>
+</body>
+<script> 
+function calculate(){
+let workDone = +document.querySelector("#workDone");
+let time = + document.querySelector("#time");
+//formula of power (power = work done / elapsed time)
+let power = workDone/time ;
+console.log(power)
+alert (power)
+}
+
+</script>
+
+
+</html>

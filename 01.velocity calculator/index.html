@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .three {
+            background-color: rgb(0, 255, 0)
+        }
+
+        .two {
+
+            background-color: aqua;
+        }
+
+        .one {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+        }
+    </style>
+    <table class="one"> <span>
+            <h1> Velocity Calculator</h1>
+        </span>
+        <div>
+            <form class="git" onsubmit=" calculate() ;return false">
+                <!-- <span><label for="velocity "> velocity :</label>
+            <input type="number" id="velocity"></span> <br> -->
+                <span> <label for="distance">distance :</label>
+                    <input type="number" id="distance"></span><br>
+                <span> <label for="time">time :</label>
+                    <input type="number" id="time"></span><br>
+
+            </form>
+
+            <button onclick="calculate()" value="calculate" class="submit"> submit </button>
+
+
+
+            <div>
+                <h1 id="result"></h1>
+            </div>
+        </div>
+    </table><a href="derived quantities calculators/index.html"></a>
+
+<body>
+
+
+
+</body>
+<script>
+    function calculate() {
+        let distance = +document.querySelector("#distance").value;
+        distance = Number(distance)
+        let time = +document.querySelector("#time").value;
+        time = Number(time)
+        let velocity = distance * time; console.log(velocity)
+
+        // velocity = document.querySelector("result")
+        alert(velocity)
+
+    }
+    ;
+
+
+    let result = document.querySelector("#result").value;
+
+
+</script>
+
+</html>

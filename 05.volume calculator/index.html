@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .three {
+     background-color: rgb(0, 255, 0)
+         
+         }
+         .two{
+     
+         background-color: aqua;
+         }
+         .one{
+             text-align: center;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:30px;
+         }
+     </style>
+    <a href="
+    "></a>
+</head>
+
+<body class="two">
+
+
+
+    <span class="one">
+        <div>
+            <h1>volume calculator :</h1>
+        </div>
+        <div>
+            <form onsubmit="calculate();return false;">
+                <label for="length">length</label>
+                <input type="number" name="length" id="length"><br>
+                <label for="breadth">breadth</label>
+                <input type="number" name="breadth" id="breadth"><br>
+                <label for="height">height</label>
+                <input type="number" name="height" id="height"><br>
+
+            </form>
+        </div>
+
+        <div>
+
+            <button  class="three" onclick="calculate()"> submit</button>
+        </div>
+    </span>
+</body>
+<script>
+function calculate() {
+    let length = +document.querySelector("#length");
+    let breadth = +document.querySelector("#breadth");
+    let height = +document.querySelector("#height");
+
+
+    //formula of volume ( volume = length x height x breadth)
+    let volume = length * breadth * height;
+    console.log(volume)
+    alert(volume)
+
+
+}
+
+
+
+</script>
+</html>

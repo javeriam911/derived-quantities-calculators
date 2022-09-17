@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .three {
+     background-color: rgb(0, 255, 0)
+         
+         }
+         .two{
+     
+         background-color: aqua;
+         }
+         .one{
+             text-align: center;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:30px;
+         }
+     </style><style>
+   .three {
+background-color: rgb(0, 255, 0)
+    
+    }
+    .two{
+
+    background-color: aqua;
+    }
+    .one{
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:30px;
+    }
+</style>
+</head>
+
+<body class="two">
+    <span class="one">
+        <div>
+            <h1>Force calculator:</h1>
+        </div>
+        <div>
+            <form onsubmit="calculate() ;return false;">
+                <label for="mass"> Mass :</label>
+                <input type="number" id="mass">
+                <label for=" acceleration">Acceleration :</label>
+                <input type="number" id="acceleration">
+
+            </form>
+        </div>
+        <div><button  class="three" onclick="calculete() "> Submit</button></div>
+    </span>
+
+
+</body>
+<script>
+function calculate() {
+    let mass = +document.querySelector("#mass").value;
+    let acceleration = +document.querySelector("#acceleration").value;
+//formula of force ,(force = mass x acceleration)
+
+
+    let force = mass * acceleration;
+    console.log(Force);
+    alert(force)
+
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   .three {
+background-color: rgb(0, 255, 0)
+    
+    }
+    .two{
+
+    background-color: aqua;
+    }
+    .one{
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:30px;
+    }
+</style>
+</head>
+
+<body class="two">
+    <span class="one">
+        <div>
+            <h1 class="one">
+                Area Calculator :
+            </h1>
+        </div>
+
+
+        <div>
+            <form onsubmit="calculate();return false ;">
+                <div> <label for="force">Force :</label>
+
+                    <input type="number" id="force">
+                </div><br>
+                <div> <label for="area" c>Area :</label>
+
+                    <input type="number" id="area">
+                </div><br>
+
+            </form>
+        </div>
+
+        <div ><button class="three" onclick="calculate()"> submit</button></div>
+    </span>
+
+
+
+
+
+</body>
+<script>
+    function calculate() {
+
+        let force = document.querySelector("#force").value;
+        let area = +document.querySelector("#area").value;
+
+        //formula of area ( area = force / area)
+        let pressure = force / area;
+        console.log(pressure)
+        alert(pressure)
+    }
+
+
+</script>
+
+</html>

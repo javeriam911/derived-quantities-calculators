@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .three {
+     background-color: rgb(0, 255, 0)
+         
+         }
+         .two{
+     
+         background-color: aqua;
+         }
+         .one{
+             text-align: center;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size:30px;
+         }
+     </style>
+</head>
+
+<body class="two">
+    <span class="one">
+        <div>
+            <h1> work done calculator : </h1>
+        </div>
+        <div>
+            <form onsubmit="calculate();return false;">
+                <label for="force">Force :</label>
+                <input type="number" name="force" id="force"><br>
+                <label for="distance">Distance :</label>
+                <input type="number" name="distance" id="distance"><br>
+            </form>
+        </div>
+
+        <div>
+            <button  class="three" onclick="calculate()" id="button"> submit</button>
+        </div>
+    </span>
+    <script>
+function calculate() {
+    let force  = +document.querySelector("#force").value;
+    let distance = +document.querySelector("#distance").value;
+    let workDone = force * distance;
+    console.log(workDone);
+
+    alert(workDone);
+
+
+
+}
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
